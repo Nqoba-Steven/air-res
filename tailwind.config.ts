@@ -13,6 +13,6 @@ export default {
         foreground: "var(--foreground)",
       },
     },
-  },
+  }, 
   plugins: [],
 } satisfies Config;
