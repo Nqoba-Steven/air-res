@@ -1,11 +1,11 @@
 pipeline {
+    agent any
 
     stages { 
-        stage('Docker node test') {
+        stage('Build Docker for Jenkins') {
             agent {
                 docker {
                     image 'node:21-alpine'
-                    args '--name docker-node'
                     reuseNode true
                 }
             }
